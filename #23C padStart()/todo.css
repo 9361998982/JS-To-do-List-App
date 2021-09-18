@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Rowdies&family=Titillium+Web&display=swap');
-
+*{
+  outline:none;
+}
 .strike {
   text-decoration: line-through;
 }
 
 td{
-  border: 1px solid black;
+ border: 2px solid #cafafe;
   padding: 5px;
 }
 
@@ -13,10 +15,15 @@ td{
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 1rem;
+    
 }
-
+#categoryFilter{
+  border:none;
+  color:#55bcc9;
+}
 .todoTable-block{
   margin-top: 1rem;
+  border: none;
 }
 
 .pagination-pages{
@@ -33,24 +40,31 @@ td{
 }
 
 ::-ms-input-placeholder{
-  color: #ed6a5e;
+  color: #0b0c10;
 }
 
 ::-webkit-input-placeholder{
-  color: #ed6a5e;
+  color: #0b0c10;
 }
 
 ::placeholder{
-  color: #ed6a5e;
+  color: #1f2833;
 }
 
 input {
-  color:#a11e12;
+  color:#0b0c10;
+  border:none;
+  border-bottom:2px solid black;
 }
 
 h3 {
-  color:#a11e12;
+  color:#0b0c10;
   font-family: 'Rowdies', cursive;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 1%;
+  margin: 12px 0;
+  background-image: linear-gradient(250deg,#3feee6,#55bcc9);
+
 }
 
 
@@ -60,10 +74,12 @@ body{
 }
 
 .todo-block{
-  border: 1px solid #ff8e72;
+  
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border: 1px solid transparent;
   padding: 1rem;
-  border-radius: 20px;
-  color: #a11e12;
+  
+  color: #0b0c10;
 }
 
 @media screen and (max-width: 767px) {
@@ -107,7 +123,7 @@ body{
   min-width: 50vw;
   height: 50vh;
   /*border: 1px solid green;*/
-  background-color: #ffd6cc;
+  background-color: #cafafe;
 }
 
 .todo-modal-close-btn{
@@ -131,13 +147,15 @@ body{
 }
 
 #todoTable tr:nth-child(even) {
-  background-color: #ffd6cc;
+  background-color: #cafafe;
 }
 
 button{
-  background-color: #ffd6cc;
-  color: #a11e12;
-  border: 1px outset #ed6a5e;
+  background-image: linear-gradient(250deg,#3feee6,#55bcc9);
+  color: #0b0c10;
+  border: 1px outset transparent;
+  margin: 2px;
+  border: none;
 }
 
 button:active{
